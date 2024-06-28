@@ -1,10 +1,12 @@
-.DEFAULT: toil
+.DEFAULT: all
 .PHONY: install
 
 INSTALL = install
 prefix = /usr/local
+exec_prefix = $(prefix)
+bindir = $(prefix)/bin
 
-toil: toil.c
+all: toil
 
 install: toil
-	$(INSTALL) $? $(DESTDIR)
+	$(INSTALL) --target-directory=$(DESTDIR)$(bindir) -D toil
