@@ -80,7 +80,7 @@ int main (int argc, char **argv)
 	int num_files = argc - 1;
 	char **file_names = argv + 1;
 
-	files = malloc(argc * sizeof *files);
+	files = malloc(num_files * sizeof *files);
 
 	record_starting_state(num_files, file_names, files);
 	wait_for_change(num_files, file_names, files);
