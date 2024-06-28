@@ -2,7 +2,7 @@
 .PHONY: install
 
 INSTALL = install
-DESTDIR = /usr/local/bin
+prefix = /usr/local
 
 toil: toil.c
 
