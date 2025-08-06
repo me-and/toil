@@ -1,5 +1,5 @@
 .DEFAULT: all
-.PHONY: install
+.PHONY: all install
 
 INSTALL = install
 prefix = /usr/local
